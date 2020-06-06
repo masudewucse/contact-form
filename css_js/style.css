@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* For 640 Resolution */
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  .container {
+    width: 360px;
+  }
+}
+/* For 1024 Resolution */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .container {
+    width: 768px;
+  }
+}
+/* For 1366 Resolution */
+@media only screen and (min-width: 1030px) and (max-width: 1366px) {
+  .container {
+    width: 700px;
+  }
+}
+@media only screen and (min-width: 1370px) and (max-width: 1605px) {
+  .container {
+    width: 800px;
+  }
+}
+@media only screen and (min-width: 1370px) and (max-width: 1860px) {
+  .container {
+    width: 800px;
+  }
+}
+/* If you're looking to supply different graphics or choose different typography for the lower resolution iPad display, the media queries below will work. */
+/* Orientation : Landscape */
+@media only screen and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) and (min-device-width: 768px) and (max-device-width: 1007px) {
+  /* STYLES GO HERE */
+}
+/* Orientation : Portrait */
+@media only screen and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) and (min-device-width: 768px) and (max-device-width: 1007px) {
+  /* STYLES GO HERE */
+}
+table,
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 15px;
+}
+#final-submit {
+  float: right;
+}
+span.star,
+.error {
+  color: red;
+}
