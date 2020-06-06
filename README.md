@@ -3,9 +3,9 @@
 Fill valid data => Preview the filled data => decide wheter send or edit again
 Languages and markups:
 
-- HTML5, CSS3
-- PHP7 (OOP), MYSQL (database PDO)
+- PHP7 (OOP), MYSQL(db:PDO)
 - Pure Javascript
+- HTML5, CSS3
 
 # Setup
 
