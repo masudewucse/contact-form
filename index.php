@@ -26,7 +26,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kontaktformular</title>
     <link href="css_js/style.css" media="all" rel="stylesheet" type="text/css">
     <script async src="css_js/script.js"></script>
 </head>
@@ -35,10 +35,10 @@
 if($show_data_preview === false):
 ?>
 <div class="container">
-    <h2>Contact Form</h2>
+    <h2>Kontaktformular</h2>
     <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
     <label for="fullname">Full Name<span class="star">*</span></label>
-      <input type="text" id="fullname" value="<?=$_POST['fullname']??''?>" placeholder="Full name"  name="fullname" required minlength="3" maxlength="100">
+      <input type="text" id="fullname" value="<?=$_POST['fullname']??''?>" placeholder="Full Name"  name="fullname" required minlength="3" maxlength="100">
                 <div class="error"><?=$error['fullname']??''?></div>
       <label for="email">Email address<span class="star">*</span> </label>
       <input type="email" id="email" value="<?=$_POST['email']??''?>" placeholder="Email"  name="email" required>
@@ -52,7 +52,7 @@ if($show_data_preview === false):
       <textarea id="message" placeholder="Write your messsage.." style="height:200px" name="message" required ><?=$_POST['message']??''?></textarea>
                 <div class="error"><?=$error['message']??''?></div>
 
-      <input id="primary_contact" type="submit" value="submit" name="submit_continue">
+      <input id="primary_contact" type="submit" value="Send" name="submit_continue">
 
     </form>
   </div>
@@ -60,10 +60,10 @@ if($show_data_preview === false):
 else:
 ?>
 <div class="container">
-    <h2>Contact Form:: your filled data overview</h2>
+    <h2>Kontaktformular :: Ihre ausgefüllte Datenübersicht</h2>
     <table>
   <tr>
-    <td>Full name</td>
+    <td>Full Name</td>
     <td><?=$_POST['fullname']?></td>
   </tr>
   <tr>

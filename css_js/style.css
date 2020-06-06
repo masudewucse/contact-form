@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -81,6 +81,7 @@ td,
 th {
   border: 1px solid #ddd;
   text-align: left;
+  font-size: 13px;
 }
 
 table {
