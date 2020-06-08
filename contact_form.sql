@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jun 06, 2020 at 04:42 PM
+-- Generation Time: Jun 08, 2020 at 05:25 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.30
 
@@ -29,15 +29,12 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `contact_form` (
   `id` int(10) NOT NULL,
+  `time` timestamp NOT NULL DEFAULT current_timestamp(),
   `fullname` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `subject` varchar(255) NOT NULL,
   `message` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Indexes for dumped tables
---
 
 --
 -- Indexes for table `contact_form`
